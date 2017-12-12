@@ -1,0 +1,13 @@
+{
+	"name": "mediawiki/blue-spice-namespace-c-s-s",
+	"type": "mediawiki-extension",
+	"description": "Namespace specific styling",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"autoload": {
+		"psr-4": {
+		}
+	}
+}
