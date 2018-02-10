@@ -31,11 +31,7 @@
 
 class NamespaceCss extends BsExtensionMW {
 	public function initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$this->setHook( 'BeforePageDisplay' );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**
