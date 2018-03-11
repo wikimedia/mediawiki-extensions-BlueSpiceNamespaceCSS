@@ -10,21 +10,27 @@
 	],
 	"descriptionmsg": "bs-namespacecss-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceNamespaceCSS": {
-			"className": "NamespaceCss",
-			"extPath": "/BlueSpiceNamespaceCSS"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceNamespaceCSS": {
+					"className": "\\BlueSpice\\NamespaceCSS\\Extension",
+					"extPath": "/BlueSpiceNamespaceCSS"
+				}
+			}
 		}
 	},
-
 	"MessagesDirs": {
 		"NamespaceCss": [
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"NamespaceCss": "NamespaceCss.class.php"
+	"AutoloadNamespaces": {
+		"BlueSpice\\NamespaceCSS\\" : "src/"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\NamespaceCSS\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

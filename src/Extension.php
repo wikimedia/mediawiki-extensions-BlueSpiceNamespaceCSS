@@ -27,32 +27,6 @@
  * @filesource
  */
 
-// Last review MRG (07.11.11 18:22)
+namespace BlueSpice\NamespaceCSS;
 
-class NamespaceCss extends BsExtensionMW {
-	public function initExt() {
-		$this->setHook( 'BeforePageDisplay' );
-	}
-
-	/**
-	 * @param OutputPage $oOut
-	 * @param Skin $oSkin
-	 * @return boolean
-	 */
-	public function onBeforePageDisplay( &$oOut, &$oSkin ) {
-		$oTitle = $oSkin->getTitle();
-
-		$aNamespaces	= MWNamespace::getCanonicalNamespaces();
-		$iCurrentNs		= $oTitle->getNamespace();
-
-		if( $oTitle->isTalkPage() ) $iCurrentNs--;
-		if( !isset($aNamespaces[$iCurrentNs]) ) return true;
-
-		$oStyleSheetTitle = Title::newFromText( $aNamespaces[$iCurrentNs].'_css', NS_MEDIAWIKI );
-		if( $oStyleSheetTitle->exists() ) {
-			$oOut->addStyle($oStyleSheetTitle->getLocalUrl( array( 'action' => 'raw', 'ctype' => 'text/css' ) ));
-		}
-
-		return true;
-	}
-}
+class Extension extends \BlueSpice\Extension {}
