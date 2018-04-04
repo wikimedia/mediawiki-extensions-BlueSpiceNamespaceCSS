@@ -23,6 +23,9 @@
 					"className": "\\BlueSpice\\NamespaceCSS\\Extension",
 					"extPath": "/BlueSpiceNamespaceCSS"
 				}
+			},
+			"AdminToolRegistry": {
+				"bs-namespacecss-manager": "\\BlueSpice\\NamespaceCSS\\AdminTool"
 			}
 		}
 	},
@@ -31,11 +34,45 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceNamespaceCSSManagerAlias": "languages/SpecialNamespaceCSSManager.alias.php"
+	},
+	"SpecialPages": {
+		"BlueSpiceNamespaceCSSManager": "\\BlueSpice\\NamespaceCSS\\Special\\Manager"
+	},
+	"APIModules": {
+		"bs-namespacecss-store": "\\BlueSpice\\NamespaceCSS\\Api\\Store\\NamespaceCSS"
+	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\NamespaceCSS\\" : "src/"
+		"BlueSpice\\NamespaceCSS\\": "src/"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\NamespaceCSS\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\NamespaceCSS\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\NamespaceCSS\\Hook\\LoadExtensionSchemaUpdates\\AddMoveToDotPostDatabaseMaintenance::callback"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceNamespaceCSS/resources"
+	},
+	"ResourceModules": {
+		"ext.bluespice.namespaceCSS.special": {
+			"scripts": "ext.bluespice.namespaceCSS.special.js",
+			"dependencies": [
+				"ext.bluespice.extjs"
+			],
+			"messages": [
+				"bs-namespacecss-specialmanager-label-namespacename",
+				"bs-namespacecss-specialmanager-label-sourcepage"
+			]
+		}
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"NamespaceCSSExcludeNamespaces": {
+			"value": [
+				-2
+			]
+		}
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

@@ -20,10 +20,6 @@
 			"minus-x fix ."
 		]
 	},
-	"autoload": {
-		"psr-4": {
-		}
-	},
 	"extra": {
 		"installer-name": "BlueSpiceNamespaceCSS"
 	}
