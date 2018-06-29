@@ -4,5 +4,7 @@
 			"Nikosgranturismogt"
 		]
 	},
-	"bs-namespacecss-desc": "Ορισμός συγκεκριμένου στυλ χώρου"
+	"bs-namespacecss-desc": "Ορισμός συγκεκριμένου στυλ χώρου",
+	"bs-namespacecss-specialmanager-label-namespacename": "Ονοματοχώρος",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Σελίδα πηγής"
 }

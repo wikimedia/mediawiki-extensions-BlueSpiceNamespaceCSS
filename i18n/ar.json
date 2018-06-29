@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Maroen1990"
+			"Maroen1990",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
-	"bs-namespacecss-desc": "مساحة التصميم محددة"
+	"bs-namespacecss-desc": "مساحة التصميم محددة",
+	"bs-namespacecss-specialmanager-label-namespacename": "نطاق"
 }

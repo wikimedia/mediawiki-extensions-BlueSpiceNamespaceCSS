@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Revi"
+			"Revi",
+			"Ykhwong"
 		]
 	},
-	"bs-namespacecss-desc": "이름공간별 스타일"
+	"bs-namespacecss-desc": "이름공간별 스타일",
+	"bs-namespacecss-specialmanager-label-namespacename": "이름공간"
 }

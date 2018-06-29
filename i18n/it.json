@@ -4,5 +4,6 @@
 			"Beta16"
 		]
 	},
-	"bs-namespacecss-desc": "Stile specifico per namespace"
+	"bs-namespacecss-desc": "Stile specifico per namespace",
+	"bs-namespacecss-specialmanager-label-namespacename": "Namespace"
 }
