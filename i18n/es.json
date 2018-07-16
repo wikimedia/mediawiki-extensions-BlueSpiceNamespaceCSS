@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
-	"bs-namespacecss-desc": "Estilo específico del espacio de nombres"
+	"bs-namespacecss-desc": "Estilo específico del espacio de nombres",
+	"bs-namespacecss-specialmanager-label-namespacename": "Espacio de nombres"
 }
