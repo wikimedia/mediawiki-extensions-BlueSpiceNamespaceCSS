@@ -2,7 +2,7 @@
 
 namespace BlueSpice\NamespaceCSS\Special;
 
-class Manager extends \BsSpecialPage {
+class Manager extends \BlueSpice\SpecialPage {
 	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
 		parent::__construct( 'BlueSpiceNamespaceCSSManager', 'editinterface' );
 	}
