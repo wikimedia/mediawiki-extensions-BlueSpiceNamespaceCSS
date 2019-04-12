@@ -23,10 +23,11 @@
  * @author     Patric Wirth <wirth@hallowelt.com>
  * @package    BluespiceNamespaceCSS
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
 namespace BlueSpice\NamespaceCSS;
 
-class Extension extends \BlueSpice\Extension {}
+class Extension extends \BlueSpice\Extension {
+}

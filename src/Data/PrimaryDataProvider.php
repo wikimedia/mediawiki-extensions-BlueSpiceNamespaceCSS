@@ -27,6 +27,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
+	 * @param \IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->db = $db;
@@ -36,18 +37,19 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
 
-		foreach( $this->context->getLanguage()->getNamespaces() as $idx => $ns ) {
-			if( \MWNamespace::isTalk( $idx ) ) {
+		foreach ( $this->context->getLanguage()->getNamespaces() as $idx => $ns ) {
+			if ( \MWNamespace::isTalk( $idx ) ) {
 				continue;
 			}
-			if( !$namespace = Helper::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
+			if ( !$namespace = Helper::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
 				continue;
 			}
-			if( !$title = Helper::buildTitleFromNamespaceIndex( $idx ) ) {
+			if ( !$title = Helper::buildTitleFromNamespaceIndex( $idx ) ) {
 				continue;
 			}
 			$row = (object)[
@@ -62,6 +64,6 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	}
 
 	protected function appendRowToData( $row ) {
-		$this->data[] = new Record( $row );;
+		$this->data[] = new Record( $row );
 	}
 }
