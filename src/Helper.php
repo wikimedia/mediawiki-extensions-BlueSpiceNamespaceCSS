@@ -8,26 +8,26 @@ class Helper {
 
 	/**
 	 *
-	 * @param integer $idx
+	 * @param int $idx
 	 * @return string|false
 	 */
 	public static function buildNamespaceNameFromNamespaceIndex( $idx ) {
-		if( \MWNamespace::isTalk( $idx ) ) {
+		if ( \MWNamespace::isTalk( $idx ) ) {
 			$idx--;
 		}
 
 		$excludeNs = Services::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'NamespaceCSSExcludeNamespaces' );
 
-		if( in_array( $idx, $excludeNs ) ) {
+		if ( in_array( $idx, $excludeNs ) ) {
 			return false;
 		}
-		if( $idx === NS_MAIN ) {
-			//This method returns canonical namespace names. The canonical
-			//language is english
+		if ( $idx === NS_MAIN ) {
+			// This method returns canonical namespace names. The canonical
+			// language is english
 			return wfMessage( 'bs-ns_main' )->inLanguage( 'en' )->plain();
 		}
-		if( !$nsName = \MWNamespace::getCanonicalName( $idx ) ) {
+		if ( !$nsName = \MWNamespace::getCanonicalName( $idx ) ) {
 			return false;
 		}
 
@@ -36,15 +36,15 @@ class Helper {
 
 	/**
 	 *
-	 * @param integer $idx
+	 * @param int $idx
 	 * @return string|false
 	 */
 	public static function buildTitleFromNamespaceIndex( $idx ) {
-		if( !$text = static::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
+		if ( !$text = static::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
 			return false;
 		}
-		if( $idx === NS_MAIN ) {
-			$text = 'Main'; //Pseudo canonical name. Used for Page name
+		if ( $idx === NS_MAIN ) {
+			$text = 'Main'; // Pseudo canonical name. Used for Page name
 		}
 
 		return \Title::newFromText( "$text.css", NS_MEDIAWIKI );

@@ -1,12 +1,12 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'BlueSpiceNamespaceCSSManager' => array( 'NamespaceCSSManager', 'Namespace CSS Manager' ),
-);
+$specialPageAliases['en'] = [
+	'BlueSpiceNamespaceCSSManager' => [ 'NamespaceCSSManager', 'Namespace CSS Manager' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'BlueSpiceNamespaceCSSManager' => array( 'NamespaceCSSManager', 'Namespace CSS Verwaltung' ),
-);
+$specialPageAliases['de'] = [
+	'BlueSpiceNamespaceCSSManager' => [ 'NamespaceCSSManager', 'Namespace CSS Verwaltung' ],
+];
