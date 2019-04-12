@@ -18,7 +18,7 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 		$this->linkrenderer = $linkrenderer;
 	}
 
-	protected function doExtend( &$dataSet ){
+	protected function doExtend( &$dataSet ) {
 		$title = \Title::newFromText( $dataSet->get( Record::SOURCE_PAGE ) );
 		$dataSet->set(
 			Record::SOURCE_PAGE_LINK,

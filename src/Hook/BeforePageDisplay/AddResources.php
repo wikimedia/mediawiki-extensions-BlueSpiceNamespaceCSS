@@ -9,7 +9,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		$title = Helper::buildTitleFromNamespaceIndex(
 			$this->out->getTitle()->getNamespace()
 		);
-		if( !$title ) {
+		if ( !$title ) {
 			return true;
 		}
 		return false;
@@ -22,7 +22,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		$this->out->addStyle( $title->getLocalUrl( [
 			'action' => 'raw',
 			'ctype' => 'text/css'
-		]));
+		] ) );
 		return true;
 	}
 }
