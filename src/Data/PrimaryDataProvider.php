@@ -46,10 +46,12 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			if ( \MWNamespace::isTalk( $idx ) ) {
 				continue;
 			}
-			if ( !$namespace = Helper::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
+			$namespace = Helper::buildNamespaceNameFromNamespaceIndex( $idx );
+			if ( !$namespace ) {
 				continue;
 			}
-			if ( !$title = Helper::buildTitleFromNamespaceIndex( $idx ) ) {
+			$title = Helper::buildTitleFromNamespaceIndex( $idx );
+			if ( !$title ) {
 				continue;
 			}
 			$row = (object)[
@@ -63,6 +65,10 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		return $this->data;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $row
+	 */
 	protected function appendRowToData( $row ) {
 		$this->data[] = new Record( $row );
 	}

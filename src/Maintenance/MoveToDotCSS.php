@@ -7,6 +7,10 @@ use BlueSpice\NamespaceCSS\Helper;
 
 class MoveToDotCSS extends \LoggedUpdateMaintenance {
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function doDBUpdates() {
 		$toMigrate = $this->collectTitles();
 
@@ -42,19 +46,25 @@ class MoveToDotCSS extends \LoggedUpdateMaintenance {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function collectTitles() {
 		$toMigrate = [];
 		foreach ( \MWNamespace::getCanonicalNamespaces() as $idx => $ns ) {
 			if ( \MWNamespace::isTalk( $idx ) ) {
 				continue;
 			}
-			if ( !$title = $this->buildOldTitleFromNamespaceIndex( $idx ) ) {
+			$title = $this->buildOldTitleFromNamespaceIndex( $idx );
+			if ( !$title ) {
 				continue;
 			}
 			if ( !$title->exists() ) {
 				continue;
 			}
-			if ( !$newTitle = Helper::buildTitleFromNamespaceIndex( $idx ) ) {
+			$newTitle = Helper::buildTitleFromNamespaceIndex( $idx );
+			if ( !$newTitle ) {
 				continue;
 			}
 			$toMigrate[$idx] = [
@@ -65,22 +75,40 @@ class MoveToDotCSS extends \LoggedUpdateMaintenance {
 		return $toMigrate;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getReason() {
 		return 'Moved by Updater ' . __CLASS__;
 	}
 
+	/**
+	 *
+	 * @return \User
+	 */
 	protected function getUser() {
 		return Services::getInstance()->getBSUtilityFactory()
 			->getMaintenanceUser()->getUser();
 	}
 
+	/**
+	 *
+	 * @param int $idx
+	 * @return \Title|false
+	 */
 	protected function buildOldTitleFromNamespaceIndex( $idx ) {
-		if ( !$text = Helper::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
+		$text = Helper::buildNamespaceNameFromNamespaceIndex( $idx );
+		if ( !$text ) {
 			return false;
 		}
 		return \Title::newFromText( $text . "_css", NS_MEDIAWIKI );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getUpdateKey() {
 		return 'bs-namespace-css-move-to-dot-css3';
 	}
