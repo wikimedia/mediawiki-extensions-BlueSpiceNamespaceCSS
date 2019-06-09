@@ -27,7 +27,8 @@ class Helper {
 			// language is english
 			return wfMessage( 'bs-ns_main' )->inLanguage( 'en' )->plain();
 		}
-		if ( !$nsName = \MWNamespace::getCanonicalName( $idx ) ) {
+		$nsName = \MWNamespace::getCanonicalName( $idx );
+		if ( !$nsName ) {
 			return false;
 		}
 
@@ -37,14 +38,16 @@ class Helper {
 	/**
 	 *
 	 * @param int $idx
-	 * @return string|false
+	 * @return \Title|false
 	 */
 	public static function buildTitleFromNamespaceIndex( $idx ) {
-		if ( !$text = static::buildNamespaceNameFromNamespaceIndex( $idx ) ) {
+		$text = static::buildNamespaceNameFromNamespaceIndex( $idx );
+		if ( !$text ) {
 			return false;
 		}
 		if ( $idx === NS_MAIN ) {
-			$text = 'Main'; // Pseudo canonical name. Used for Page name
+			// Pseudo canonical name. Used for Page name
+			$text = 'Main';
 		}
 
 		return \Title::newFromText( "$text.css", NS_MEDIAWIKI );

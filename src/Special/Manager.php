@@ -3,10 +3,24 @@
 namespace BlueSpice\NamespaceCSS\Special;
 
 class Manager extends \BlueSpice\SpecialPage {
-	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
+	/**
+	 *
+	 * @param string $name
+	 * @param string $restriction
+	 * @param bool $listed
+	 * @param bool $function
+	 * @param string $file
+	 * @param bool $includable
+	 */
+	public function __construct( $name = '', $restriction = '', $listed = true, $function = false,
+		$file = 'default', $includable = false ) {
 		parent::__construct( 'BlueSpiceNamespaceCSSManager', 'editinterface' );
 	}
 
+	/**
+	 *
+	 * @param string $sParameter
+	 */
 	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
 
