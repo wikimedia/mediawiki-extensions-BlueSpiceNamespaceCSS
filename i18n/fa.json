@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dalba"
+			"Dalba",
+			"FarsiNevis"
 		]
 	},
-	"bs-namespacecss-desc": "سبک‌دهی‌های مختص به فضای‌نام"
+	"bs-namespacecss-desc": "سبک‌دهی‌های مختص به فضای‌نام",
+	"bs-namespacecss-specialmanager-label-namespacename": "فضای نام"
 }
