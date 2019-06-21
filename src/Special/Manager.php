@@ -2,7 +2,9 @@
 
 namespace BlueSpice\NamespaceCSS\Special;
 
-class Manager extends \BlueSpice\SpecialPage {
+use BlueSpice\Special\ManagerBase;
+
+class Manager extends ManagerBase {
 	/**
 	 *
 	 * @param string $name
@@ -18,21 +20,18 @@ class Manager extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 *
-	 * @param string $sParameter
+	 * @return string ID of the HTML element being added
 	 */
-	public function execute( $sParameter ) {
-		parent::execute( $sParameter );
+	protected function getId() {
+		return 'bs-namespacecss-manager';
+	}
 
-		$this->getOutput()->addModules( 'ext.bluespice.namespaceCSS.special' );
-		$this->getOutput()->addHTML(
-			\Html::element(
-				'div',
-				[
-					'id' => 'bs-namespacecss-manager',
-					'class' => 'bs-manager-container'
-				]
-			)
-		);
+	/**
+	 * @return array
+	 */
+	protected function getModules() {
+		return [
+			'ext.bluespice.namespaceCSS.special'
+		];
 	}
 }
