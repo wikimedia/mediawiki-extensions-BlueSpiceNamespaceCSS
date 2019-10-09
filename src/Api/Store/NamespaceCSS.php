@@ -5,7 +5,7 @@ use BlueSpice\NamespaceCSS\Data\Store;
 use BlueSpice\Context;
 use BlueSpice\Services;
 
-class NamespaceCSS extends \BlueSpice\StoreApiBase {
+class NamespaceCSS extends \BlueSpice\Api\Store {
 
 	protected function makeDataStore() {
 		return new Store(
