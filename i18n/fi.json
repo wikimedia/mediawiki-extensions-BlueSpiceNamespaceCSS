@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nike"
+			"Nike",
+			"Silvonen"
 		]
 	},
-	"bs-namespacecss-specialmanager-label-sourcepage": "Lähdesivu"
+	"bs-namespacecss-specialmanager-label-sourcepage": "Lähdesivu",
+	"bs-namespacecss-specialmanager-label-namespacename": "Nimiavaruus"
 }
