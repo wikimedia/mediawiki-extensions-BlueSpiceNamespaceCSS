@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\NamespaceCSS\Api\Store;
 
-use BlueSpice\NamespaceCSS\Data\Store;
 use BlueSpice\Context;
+use BlueSpice\NamespaceCSS\Data\Store;
 use BlueSpice\Services;
 
 class NamespaceCSS extends \BlueSpice\Api\Store {

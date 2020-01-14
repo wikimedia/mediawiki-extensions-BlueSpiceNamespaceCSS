@@ -2,8 +2,8 @@
 
 namespace BlueSpice\NamespaceCSS\Maintenance;
 
-use BlueSpice\Services;
 use BlueSpice\NamespaceCSS\Helper;
+use BlueSpice\Services;
 
 class MoveToDotCSS extends \LoggedUpdateMaintenance {
 
