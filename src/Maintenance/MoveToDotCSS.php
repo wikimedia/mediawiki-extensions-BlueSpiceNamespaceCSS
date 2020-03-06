@@ -88,7 +88,7 @@ class MoveToDotCSS extends \LoggedUpdateMaintenance {
 	 * @return \User
 	 */
 	protected function getUser() {
-		return Services::getInstance()->getBSUtilityFactory()
+		return Services::getInstance()->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->getUser();
 	}
 
