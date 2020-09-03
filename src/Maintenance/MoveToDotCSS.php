@@ -3,7 +3,7 @@
 namespace BlueSpice\NamespaceCSS\Maintenance;
 
 use BlueSpice\NamespaceCSS\Helper;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class MoveToDotCSS extends \LoggedUpdateMaintenance {
 
@@ -88,7 +88,7 @@ class MoveToDotCSS extends \LoggedUpdateMaintenance {
 	 * @return \User
 	 */
 	protected function getUser() {
-		return Services::getInstance()->getService( 'BSUtilityFactory' )
+		return MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->getUser();
 	}
 
