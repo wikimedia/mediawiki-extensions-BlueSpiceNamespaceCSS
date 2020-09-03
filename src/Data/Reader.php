@@ -2,7 +2,7 @@
 
 namespace BlueSpice\NamespaceCSS\Data;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Reader extends \BlueSpice\Data\DatabaseReader {
 
@@ -29,7 +29,7 @@ class Reader extends \BlueSpice\Data\DatabaseReader {
 	 */
 	public function makeSecondaryDataProvider() {
 		return new SecondaryDataProvider(
-			Services::getInstance()->getLinkRenderer()
+			MediaWikiServices::getInstance()->getLinkRenderer()
 		);
 	}
 
