@@ -2,7 +2,7 @@
 
 namespace BlueSpice\NamespaceCSS;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Helper {
 
@@ -16,7 +16,7 @@ class Helper {
 			$idx--;
 		}
 
-		$excludeNs = Services::getInstance()->getConfigFactory()
+		$excludeNs = MediaWikiServices::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'NamespaceCSSExcludeNamespaces' );
 
 		if ( in_array( $idx, $excludeNs ) ) {
