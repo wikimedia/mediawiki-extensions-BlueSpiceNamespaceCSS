@@ -9,7 +9,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		$title = Helper::buildTitleFromNamespaceIndex(
 			$this->out->getTitle()->getNamespace()
 		);
-		if ( !$title ) {
+		if ( !$title || !$title->exists() ) {
 			return true;
 		}
 		return false;
