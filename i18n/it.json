@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
 	"bs-namespacecss-desc": "Stile specifico per namespace",
-	"bs-namespacecss-specialmanager-label-namespacename": "Namespace"
+	"bs-namespacecss-specialmanager-label-namespacename": "Namespace",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Pagina sorgente"
 }
