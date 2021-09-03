@@ -46,9 +46,15 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\NamespaceCSS\\": "src/"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\NamespaceCSS\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\NamespaceCSS\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"LoadExtensionSchemaUpdates": "\\BlueSpice\\NamespaceCSS\\Hook\\LoadExtensionSchemaUpdates\\AddMoveToDotPostDatabaseMaintenance::callback"
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\NamespaceCSS\\Hook\\LoadExtensionSchemaUpdates\\AddMoveToDotPostDatabaseMaintenance::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
