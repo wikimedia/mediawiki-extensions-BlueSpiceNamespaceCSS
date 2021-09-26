@@ -12,11 +12,13 @@ class Helper {
 	 * @return string|false
 	 */
 	public static function buildNamespaceNameFromNamespaceIndex( $idx ) {
-		if ( \MWNamespace::isTalk( $idx ) ) {
+		$services = MediaWikiServices::getInstance();
+		$namespaceInfo = $services->getNamespaceInfo();
+		if ( $namespaceInfo->isTalk( $idx ) ) {
 			$idx--;
 		}
 
-		$excludeNs = MediaWikiServices::getInstance()->getConfigFactory()
+		$excludeNs = $services->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'NamespaceCSSExcludeNamespaces' );
 
 		if ( in_array( $idx, $excludeNs ) ) {
@@ -27,7 +29,7 @@ class Helper {
 			// language is english
 			return wfMessage( 'bs-ns_main' )->inLanguage( 'en' )->plain();
 		}
-		$nsName = \MWNamespace::getCanonicalName( $idx );
+		$nsName = $namespaceInfo->getCanonicalName( $idx );
 		if ( !$nsName ) {
 			return false;
 		}
