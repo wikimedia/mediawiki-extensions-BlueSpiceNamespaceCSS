@@ -52,8 +52,9 @@ class MoveToDotCSS extends \LoggedUpdateMaintenance {
 	 */
 	protected function collectTitles() {
 		$toMigrate = [];
-		foreach ( \MWNamespace::getCanonicalNamespaces() as $idx => $ns ) {
-			if ( \MWNamespace::isTalk( $idx ) ) {
+		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
+		foreach ( $namespaceInfo->getCanonicalNamespaces() as $idx => $ns ) {
+			if ( $namespaceInfo->isTalk( $idx ) ) {
 				continue;
 			}
 			$title = $this->buildOldTitleFromNamespaceIndex( $idx );

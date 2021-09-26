@@ -3,6 +3,7 @@
 namespace BlueSpice\NamespaceCSS\Data;
 
 use BlueSpice\NamespaceCSS\Helper;
+use MediaWik\MediaWikiServices;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
@@ -43,7 +44,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		$this->data = [];
 
 		foreach ( $this->context->getLanguage()->getNamespaces() as $idx => $ns ) {
-			if ( \MWNamespace::isTalk( $idx ) ) {
+			if ( MediaWikiServices::getInstance()->getNamespaceInfo()->isTalk( $idx ) ) {
 				continue;
 			}
 			$namespace = Helper::buildNamespaceNameFromNamespaceIndex( $idx );
