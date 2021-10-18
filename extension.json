@@ -47,14 +47,14 @@
 		"BlueSpice\\NamespaceCSS\\": "src/"
 	},
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\NamespaceCSS\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\NamespaceCSS\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\NamespaceCSS\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\NamespaceCSS\\Hook\\LoadExtensionSchemaUpdates\\AddMoveToDotPostDatabaseMaintenance::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
