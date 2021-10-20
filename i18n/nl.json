@@ -3,10 +3,13 @@
 		"authors": [
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"SPQRobin"
 		]
 	},
-	"bs-namespacecss-desc": "Naamruimte specifieke opmaak",
+	"bs-namespacecss-desc": "Naamruimte-specifieke opmaak",
 	"bs-namespacecss-specialmanager-label-namespacename": "Naamruimte",
-	"bs-namespacecss-specialmanager-label-sourcepage": "Bronpagina"
+	"bs-namespacecss-specialmanager-label-sourcepage": "Bronpagina",
+	"bluespicenamespacecssmanager": "Naamruimte-CSS-beheer",
+	"apihelp-bs-namespacecss-store-summary": "Geeft naamruimten en hun mogelijke CSS-bronpagina weer. Implementeert ExtJS Store-parameters."
 }
