@@ -3,7 +3,7 @@
 namespace BlueSpice\NamespaceCSS\Data;
 
 use BlueSpice\NamespaceCSS\Helper;
-use MediaWik\MediaWikiServices;
+use MediaWiki\MediaWikiServices;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
