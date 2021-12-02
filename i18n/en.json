@@ -6,6 +6,7 @@
 	},
 	"bs-namespacecss-desc": "Namespace specific styling",
 	"bluespicenamespacecssmanager": "Namespace-CSS manager",
+	"bs-namespacecss-text": "Namespace CSS",
 	"bs-namespacecss-specialmanager-label-namespacename": "Namespace",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Source page",
 	"apihelp-bs-namespacecss-store-summary": "Lists namespaces and their possible CSS source page. Implements ExtJS Store parameters."

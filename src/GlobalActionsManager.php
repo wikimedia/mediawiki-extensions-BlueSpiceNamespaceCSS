@@ -53,7 +53,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getText(): Message {
-		return Message::newFromKey( 'bluespicenamespacecssmanager' );
+		return Message::newFromKey( 'bs-namespacecss-text' );
 	}
 
 	/**
@@ -61,7 +61,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
-		return Message::newFromKey( 'bluespicenamespacecssmanager' );
+		return Message::newFromKey( 'bs-namespacecss-text' );
 	}
 
 }
