@@ -8,5 +8,6 @@
 	"bluespicenamespacecssmanager": "Navneroms-CSS-behandler",
 	"bs-namespacecss-specialmanager-label-namespacename": "Navnerom",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Kildeside",
-	"apihelp-bs-namespacecss-store-summary": "Lister opp navnerom og deres mulige CSS-kildeside. Implementerer ExtJS Store-parametre."
+	"apihelp-bs-namespacecss-store-summary": "Lister opp navnerom og deres mulige CSS-kildeside. Implementerer ExtJS Store-parametre.",
+	"bs-namespacecss-text": "Navneroms-CSS"
 }

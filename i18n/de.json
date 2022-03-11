@@ -10,5 +10,6 @@
 	"bluespicenamespacecssmanager": "Namensraum-CSS-Verwaltung",
 	"bs-namespacecss-specialmanager-label-namespacename": "Namensraum",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Quellseite",
-	"apihelp-bs-namespacecss-store-summary": "Listet Namensräume und ihre mögliche CSS-Quellseite auf. Implementiert „ExtJS Store“-Parameter."
+	"apihelp-bs-namespacecss-store-summary": "Listet Namensräume und ihre mögliche CSS-Quellseite auf. Implementiert „ExtJS Store“-Parameter.",
+	"bs-namespacecss-text": "Namensraum-CSS"
 }

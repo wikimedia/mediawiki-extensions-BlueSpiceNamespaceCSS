@@ -10,5 +10,6 @@
 	"bluespicenamespacecssmanager": "Gestionnaire de l’espace de noms CSS",
 	"bs-namespacecss-specialmanager-label-namespacename": "Espace de noms",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Page source",
-	"apihelp-bs-namespacecss-store-summary": "Liste les espaces de noms et leur page source CSS éventuelle. Met en œuvre les paramètres d’''ExtJS Store''."
+	"apihelp-bs-namespacecss-store-summary": "Liste les espaces de noms et leur page source CSS éventuelle. Met en œuvre les paramètres d’''ExtJS Store''.",
+	"bs-namespacecss-text": "CSS d’espace de noms"
 }
