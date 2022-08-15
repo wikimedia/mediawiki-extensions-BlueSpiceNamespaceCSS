@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Skalcaa"
+			"Skalcaa",
+			"Eleassar"
 		]
 	},
-	"bs-namespacecss-desc": "Specifično oblikovanje imenskega prostora"
+	"bs-namespacecss-desc": "Specifično oblikovanje imenskega prostora",
+	"bs-namespacecss-specialmanager-label-namespacename": "Imenski prostor"
 }
