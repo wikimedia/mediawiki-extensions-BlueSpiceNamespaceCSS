@@ -6,6 +6,7 @@
 	},
 	"bs-namespacecss-desc": "Namespace sta specifiche 'a formattazione",
 	"bluespicenamespacecssmanager": "Gestore de Namespace-CSS",
+	"bs-namespacecss-text": "Namespace CSS",
 	"bs-namespacecss-specialmanager-label-namespacename": "Namespace",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Pàgene sorgende",
 	"apihelp-bs-namespacecss-store-summary": "Elenghe le namespace e le possibbile pàggene sorgende d'u CSS. 'Mblemende le parametre ExtJS Store."
