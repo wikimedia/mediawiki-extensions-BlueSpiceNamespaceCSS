@@ -6,5 +6,9 @@
 		]
 	},
 	"bs-namespacecss-desc": "Specifično oblikovanje imenskega prostora",
-	"bs-namespacecss-specialmanager-label-namespacename": "Imenski prostor"
+	"bluespicenamespacecssmanager": "Upravitelj CSS imenskega prostora",
+	"bs-namespacecss-text": "CSS imenskega prostora",
+	"bs-namespacecss-specialmanager-label-namespacename": "Imenski prostor",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Izvorna stran",
+	"apihelp-bs-namespacecss-store-summary": "Navede imenske prostore in njihovo možno izvorno stran CSS. Uvede parametre ExtJS Store."
 }
