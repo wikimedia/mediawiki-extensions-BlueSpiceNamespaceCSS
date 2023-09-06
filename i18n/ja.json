@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
-			"Omotecho"
+			"Omotecho",
+			"Kokage si"
 		]
 	},
 	"bs-namespacecss-desc": "名前空間ごとのスタイル指定",
-	"bluespicenamespacecssmanager": "名前空間-CSS マネージャー"
+	"bluespicenamespacecssmanager": "名前空間-CSS マネージャー",
+	"bs-namespacecss-specialmanager-label-namespacename": "名前空間"
 }
