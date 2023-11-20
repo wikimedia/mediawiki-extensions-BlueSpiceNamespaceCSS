@@ -3,10 +3,14 @@
 		"authors": [
 			"Fryed-peach",
 			"Omotecho",
-			"Kokage si"
+			"Kokage si",
+			"もなー(偽物)"
 		]
 	},
 	"bs-namespacecss-desc": "名前空間ごとのスタイル指定",
 	"bluespicenamespacecssmanager": "名前空間-CSS マネージャー",
-	"bs-namespacecss-specialmanager-label-namespacename": "名前空間"
+	"bs-namespacecss-text": "名前空間 CSS",
+	"bs-namespacecss-specialmanager-label-namespacename": "名前空間",
+	"bs-namespacecss-specialmanager-label-sourcepage": "ソースページ",
+	"apihelp-bs-namespacecss-store-summary": "ネームスペースと有効な CSS ソース ページをリスト表示します。 ExtJS ストアパラメータを実装します。"
 }
