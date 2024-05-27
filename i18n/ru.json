@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Vlad5250"
+			"Vlad5250",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-namespacecss-desc": "Определённый стиль для пространства имён",
+	"bs-namespacecss-text": "Пространство имён CSS",
 	"bs-namespacecss-specialmanager-label-namespacename": "Пространство имён",
 	"bs-namespacecss-specialmanager-label-sourcepage": "Исходная страница"
 }
