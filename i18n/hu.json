@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wolf Rex"
+			"Wolf Rex",
+			"Krisztina"
 		]
 	},
-	"bs-namespacecss-desc": "Névtér-specifikus stílus"
+	"bs-namespacecss-desc": "Névtér-specifikus stílus",
+	"bs-namespacecss-specialmanager-label-namespacename": "Névtér",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Forráslap"
 }
