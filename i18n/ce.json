@@ -4,5 +4,7 @@
 			"Умар"
 		]
 	},
-	"bs-namespacecss-specialmanager-label-namespacename": "ЦӀерийн меттиг"
+	"bs-namespacecss-text": "ЦӀерийн меттиг CSS",
+	"bs-namespacecss-specialmanager-label-namespacename": "ЦӀерийн меттиг",
+	"bs-namespacecss-specialmanager-label-sourcepage": "ДӀайолалун агӀо"
 }
