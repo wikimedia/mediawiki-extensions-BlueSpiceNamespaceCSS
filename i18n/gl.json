@@ -2,10 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"bs-namespacecss-desc": "Estilo específico do espazo de nomes",
+	"bluespicenamespacecssmanager": "Xestor de CSS dos espazos de nomes",
+	"bs-namespacecss-text": "CSS do espazo de nomes",
 	"bs-namespacecss-specialmanager-label-namespacename": "Espazo de nomes",
-	"bs-namespacecss-specialmanager-label-sourcepage": "Páxina de orixe"
+	"bs-namespacecss-specialmanager-label-sourcepage": "Páxina de orixe",
+	"apihelp-bs-namespacecss-store-summary": "Lista os espazos de nomes e a súa posible páxina de orixe CSS. Implementa os parámetros de ExtJS Store."
 }
