@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Revi",
-			"Ykhwong"
+			"Ykhwong",
+			"Tensama0415"
 		]
 	},
 	"bs-namespacecss-desc": "이름공간별 스타일",
 	"bluespicenamespacecssmanager": "이름공간-CSS 관리자",
 	"bs-namespacecss-text": "이름공간 CSS",
 	"bs-namespacecss-specialmanager-label-namespacename": "이름공간",
-	"bs-namespacecss-specialmanager-label-sourcepage": "원본 문서"
+	"bs-namespacecss-specialmanager-label-sourcepage": "원본 문서",
+	"apihelp-bs-namespacecss-store-summary": "이름공간과 해당 이름공간에 사용 가능한 CSS 소스 문서를 나열합니다. ExtJS Store 변수를 구현합니다."
 }
