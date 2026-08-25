@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-namespacecss-desc": "Štýlovanie špecifické pre menný priestor",
+	"bluespicenamespacecssmanager": "Správca CSS menných priestorov",
+	"bs-namespacecss-text": "CSS menného priestoru",
+	"bs-namespacecss-specialmanager-label-namespacename": "Menný priestor",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Zdrojová stránka",
+	"apihelp-bs-namespacecss-store-summary": "Vypíše menné priestory a ich možnú zdrojovú stránku CSS. Implementuje parametre ExtJS Store."
+}
